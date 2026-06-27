@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Retro MP3</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<div class="mp3">
+
+
+<div class="titulo">
+♡ playlist
+</div>
+
+
+<div class="album">
+
+
+<button class="letra-btn" onclick="mostrarLetra()">
+<i class="fa-solid fa-music" style="color: rgb(175, 127, 178);"></i>
+</button>
+
+
+<div class="vinil" id="vinil">
+
+<div class="bolinha"></div>
+
+</div>
+
+
+<img src="imagens/anavitoria.jpg" class="capa">
+
+
+
+</div>
+
+
+
+
+<h1 id="nome">
+Ter o coração no chão
+</h1>
+
+
+<h2 id="artista">
+Ana Vitória
+</h2>
+
+
+
+<div class="tempo">
+
+<span id="inicio">
+0:00
+</span>
+
+
+<input 
+type="range"
+id="barra"
+value="0"
+>
+
+
+<span id="fim">
+3:45
+</span>
+
+</div>
+
+
+
+
+<div class="controles">
+
+
+<button onclick="voltar()">
+◀◀
+</button>
+
+
+<button class="play" onclick="playPause()">
+
+▶
+
+</button>
+
+
+<button onclick="proxima()">
+
+▶▶
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="lista" id="lista">
+
+
+<div class="musica ativa">
+
+🎵
+<div>
+Ter o coração no chão
+<br>
+<small>Ana Vitória</small>
+</div>
+
+</div>
+
+
+
+<div class="musica">
+
+🎵
+<div>
+Ternura
+<br>
+<small>Anitta, Melly</small>
+</div>
+
+</div>
+
+
+
+
+<div class="musica">
+
+🎵
+<div>
+Tú
+<br>
+<small>Maye</small>
+</div>
+
+</div>
+
+
+
+<div class="musica">
+
+🎵
+<div>
+Disritmia
+<br>
+<small>Martinho da Vila</small>
+</div>
+
+</div>
+
+
+
+<div class="musica">
+
+🎵
+<div>
+AMAReSÓ
+<br>
+<small>Carol Biazin</small>
+</div>
+
+</div>
+
+
+
+<div class="musica">
+
+🎵
+<div>
+Olha
+<br>
+<small>Maria Bethania</small>
+</div>
+
+</div>
+
+
+
+<div class="musica">
+
+🎵
+<div>
+Flor de Flamboyant
+<br>
+<small>João Gomes, Jota Pê e Mestrinho</small>
+</div>
+
+</div>
+
+
+
+<div class="musica">
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="verso">
+
+<button class="voltar-letra" onclick="mostrarLetra()">
+←
+</button>
+
+<div class="area-letra">
+
+</div>
+
+</div>
+
+<audio id="audio" src="musicas/musica.mp3"></audio>
+
+
+<script src="script.js?v=2"></script>
+
+</body>
+
+</html>
